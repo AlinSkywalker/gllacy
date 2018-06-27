@@ -17,6 +17,10 @@ body {
 .main-header,.main-content,.main-footer{
   margin:0 2.3%;
 }
+.main-header .logo,.main-header nav,.main-header .header-controls{
+  display: inline-block;
+}
+
 
 .main-navigation{
   list-style: none;
@@ -60,10 +64,19 @@ a {
   background-color: #ffffff;
   padding: 0;
   margin: 0;
+  display: none;
+  border-radius: 5px;
+  top:40px;
+}
+.main-navigation li:hover .sub-menu{
+  display: block;
 }
 .sub-menu li{
   display: block;
   color: #323232;
   border-radius: none;
   font-weight: normal;
+}
+.sub-menu .sub-menu-title{
+  font-weight: bold;
 }
