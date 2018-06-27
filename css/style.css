@@ -1,7 +1,21 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Bold.woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
 body {
   font-size: 16px;
   color: #ffffff;
-  font-family: "PT Sans", "Arial", serif;
+  font-family: "Roboto", "Arial", serif;
   line-height: 30px;
   padding: 0px;
   margin: 0px;
@@ -103,7 +117,9 @@ a {
   display: none;
 }
 
-
+.working-info{
+  float: right;
+}
 
 .index-banner{
   /*display: inline-block;*/
