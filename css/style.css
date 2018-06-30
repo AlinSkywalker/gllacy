@@ -19,13 +19,20 @@ body {
   line-height: 30px;
   padding: 0px;
   margin: 0px;
-  background-color: #849d8f;
+  
+}
+body input.carousel-item{
+  display: none;
 }
 .site-wraper{
   margin-left: auto;
   margin-right: auto;
   min-width: 900px;
   max-width: 1200px;
+  background-color: #849d8f;
+  background-image: url(../img/icecream1.png);
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 .main-header,.main-content,.main-footer{
   margin:0 2.3%;
@@ -139,15 +146,93 @@ a {
 }
 .index-banner-raspberry{
   float:left;
-  background: url(../img/rasp_back.png) no-repeat;
+  background: url(../img/rasp-back-1200.png) no-repeat;
 }
 .index-banner-choco{
   float:right;
-  background: url(../img/choco-back.png) no-repeat;
+  background: url(../img/choco-back-1200.png) no-repeat;
 }
 .index-banner .button{
   line-height: 24px;
-  background-color: #e94f38;
+  background:linear-gradient(90deg,#e74a35,#f26843);
   padding: 10px 15px;
   border-radius: 20px;
+  float: right;
+}
+
+.content-wrapper{
+  position: relative;
+}
+
+.slide-title{
+  font-size: 40px;
+  line-height: 40px;
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.slide-button{
+  display: inline-block;
+  line-height: 24px;
+  background:linear-gradient(90deg,#e74a35,#f26843);
+  padding: 10px 15px;
+  border-radius: 30px;
+  margin: 0 auto;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.slide{
+  position: relative;
+  padding-top: 270px;
+  text-align: center;
+  color:#ffffff;
+}
+.slider-controls{
+  position: absolute;
+  /*bottom: 25px;*/
+  z-index: 20;
+  /*left: 0;*/
+  font-size: 0;
+}
+.slider-controls label{
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+  vertical-align: top;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slide{
+  display: none;
+}
+#btn-1:checked ~ .site-wraper #slide1,
+#btn-2:checked ~ .site-wraper #slide2,
+#btn-3:checked ~ .site-wraper #slide3{
+  display: block;
+}
+
+#btn-1:checked ~ .site-wraper label[for="btn-1"],
+#btn-2:checked ~ .site-wraper label[for="btn-2"],
+#btn-3:checked ~ .site-wraper label[for="btn-3"]{
+  background-color: #ffffff;
+}
+
+#btn-1:checked ~ .site-wraper{
+  background-color: #849d8f;
+  background-image: url(../img/icecream1.png);
+}
+#btn-2:checked ~ .site-wraper{
+  background-color: #8996a6;
+  background-image: url(../img/icecream2.png);
+}
+#btn-3:checked ~ .site-wraper{
+  background-color: #9d8b84;
+  background-image: url(../img/icecream3.png);
+}
+.visualy-hidden{
+  display: none;
 }
