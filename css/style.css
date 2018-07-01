@@ -184,15 +184,15 @@ a {
 
 .slide{
   position: relative;
-  padding-top: 270px;
+  padding-top: 350px;
   text-align: center;
   color:#ffffff;
 }
 .slider-controls{
   position: absolute;
-  /*bottom: 25px;*/
+  bottom: 25px;
   z-index: 20;
-  /*left: 0;*/
+  left: 0;
   font-size: 0;
 }
 .slider-controls label{
@@ -235,4 +235,27 @@ a {
 }
 .visualy-hidden{
   display: none;
+}
+.index-main-banner{
+  position: relative;
+  margin-bottom: 40px;
+}
+.index-about{
+  background-image: url(../img/waffle-back.png);
+  color: black;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.index-about .index-about-title{
+  margin: 0;
+  padding: 0;
+}
+
+.index-about .index-about-info{
+  width: 45%;
+  display: inline-block;
+  line-height: 22px;
+  margin: 0;
+  padding: 0;
 }
